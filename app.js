@@ -9,13 +9,7 @@ function rollDice(maxTotal) {
   } else {
     mathRoll = Math.floor(Math.random() * maxTotal) + 1;
   }
-  if (mathRoll == maxTotal) {
-    currValue.style.color = "#a93535";
-  } else {
-    currValue.style.color = "white";
-  }
   currValue.textContent = mathRoll;
-  console.log(mathRoll);
 }
 
 for (let i = 0; i < buttons.length; i++) {
